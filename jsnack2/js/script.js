@@ -1,7 +1,7 @@
 /*jsnack2
 In un array sono contenuti i nomi degli invitati alla festa del grande Gatsby, chiedi all’utente il suo nome e comunicagli se può partecipare o no alla festa.*/
 
-
+/*
 //ciclo for
 let guests = ['marco', 'lorenzo', 'eleonora', 'massimo', 'matilde'];
 let guest = prompt('Inserisci il tuo nome').toLocaleLowerCase();
@@ -20,6 +20,29 @@ for (let index = 0; index < guests.length; index++) {
 }
 
 //se find è vera
+if (find) {
+    console.log('Il tuo nome è nella lista');
+} else { //altrimenti
+    console.log('Il tuo nome non è nella lista');
+}
+*/
+
+//ciclo while
+let guests = ['marco', 'lorenzo', 'eleonora', 'massimo', 'matilde'];
+let guest = prompt('Inserisci il tuo nome').toLocaleLowerCase();
+let find = false;
+let i = 0;
+while (i < guests.length) {
+    const element = guests[i].toLocaleLowerCase();
+    console.log(i, element);
+
+    //se c'è il nome dell'ospite, find è vera
+    if (element == guest) {
+        find = true;
+    }
+    i++;
+}
+
 if (find) {
     console.log('Il tuo nome è nella lista');
 } else { //altrimenti
