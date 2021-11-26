@@ -32,9 +32,9 @@ let guests = ['marco', 'lorenzo', 'eleonora', 'massimo', 'matilde'];
 let guest = prompt('Inserisci il tuo nome').toLocaleLowerCase();
 let find = false;
 let i = 0;
-while (i < guests.length) {
+while (i < guests.length && find == false) {
     const element = guests[i].toLocaleLowerCase();
-    console.log(i, element);
+    
 
     //se c'è il nome dell'ospite, find è vera
     if (element == guest) {
