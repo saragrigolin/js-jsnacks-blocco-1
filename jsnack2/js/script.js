@@ -43,6 +43,7 @@ while (i < guests.length) {
     i++;
 }
 
+//se find è vera
 if (find) {
     console.log('Il tuo nome è nella lista');
 } else { //altrimenti
