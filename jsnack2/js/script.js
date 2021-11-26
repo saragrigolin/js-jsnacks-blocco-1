@@ -46,6 +46,8 @@ while (i < guests.length && find == false) {
 //se find è vera
 if (find) {
     console.log('Il tuo nome è nella lista');
+    document.writeln('Il tuo nome è nella lista');
 } else { //altrimenti
     console.log('Il tuo nome non è nella lista');
+    document.writeln('Il tuo nome non è nella lista');
 }
